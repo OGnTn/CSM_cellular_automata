@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111111;
+        }
+
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="gridCanvas" width="900" height="900"></canvas>
+    <ul>
+        <li><button id="startButton" onClick="initializeGrid_elem()">start elem</button></li>
+
+        <li><button id="startButton" onClick="initializeGrid_random()">start random</button></li>
+        <li><button id="startButton" onClick="start_life()">start life</button></li>
+        <li><button id="startButton" onClick="step_cave()">next cave</button></li>
+        <li><button id="startButton" onClick="step_elem()">next elem</button></li>
+    </ul>
+    <script src="main.js"></script>
+</body>
+
+</html>
